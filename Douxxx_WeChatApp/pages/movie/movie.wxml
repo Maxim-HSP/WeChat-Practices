@@ -1,0 +1,36 @@
+<!--pages/movie/movie.wxml-->
+<import src="../movie/movie-list/ML_template.wxml" />
+<import src="../movie-grid/MG_template/MG_template.wxml" />
+
+<view>
+  <view class="searchArea">
+  	<icon class="searchIcon" type="search" size="15"></icon>
+  	<input 
+  		type="text" 
+  		placeholder="太空旅客，乘风破浪" 
+  		placeholder-style="color: #CFCFCF"
+  		value="{{searchText}}"
+  		bindinput="on_input"
+  		bindconfirm="go_search"
+  	/>
+  	<icon wx:if="{{isInput || isResult}}" class="clearIcon" type="cancel" color="#405f80" size="17" bindtap="clear_search"></icon>
+  </view>
+  
+  <view wx:if="{{isInput && !isResult}}" class="searchWrap">
+  	<view>历史记录</view>
+  	<block wx:for="{{searchHistory}}" wx:key="{{item}}">
+  		<text class="history-item" bindtap="go_result" data-name="{{item}}">{{item}}</text>
+  	</block>
+  </view>
+  
+  <view wx:if="{{!isInput && isResult}}" class="resultWrap">
+  	<template is="movie-grid" data="{{movieList:resultList}}"></template>
+  </view>
+  
+  <view wx:if="{{!isInput && !isResult}}">
+  	<template is="movie-list" data="{{...in_theaters}}"></template>
+  	<template is="movie-list" data="{{...coming_soon}}"></template>
+  	<template is="movie-list" data="{{...top250}}"></template>
+  </view>
+  
+</view>

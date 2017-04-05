@@ -1,0 +1,7 @@
+<template name="actor">
+    <view class="movie_casts">
+        <image src="{{img}}"></image>
+        <text class="cast_name">{{dir}}</text>
+        <text class="cast_role">导演</text>
+    </view>
+</template>

@@ -1,0 +1,39 @@
+<template name="comingWrap">
+    <view class="not-show1">
+		<view class="scroll-movie">
+			<text>近期最受欢迎</text>
+			<scroll-view scroll-x="true" style="width:750rpx">
+				<view class="row-list">
+					<block wx:for="{{movies}}" wx:key="{{item}}">
+						<view class="like" data-movieid="{{item.id}}" bindtap="onClickMovie">
+							<image src="{{item.img}}"></image>
+							<text class="movie-name">{{item.nm}}</text>
+							<text>{{item.wish}}人想看</text>
+							<text>{{item.rt}}</text>
+						</view>
+					</block>
+				</view>
+			</scroll-view>
+		</view>
+		
+		<!--	分隔块-->
+		<view class="box"></view>
+		
+	<!--	待映电影纵向列表-->
+		<view class="movie-list movie-list1">
+			<block wx:for="{{movies}}" wx:key="{{item}}">
+				<view class="movie-item" data-movieid="{{item.id}}" bindtap="onClickMovie">
+					<image src="{{item.img}}"></image>
+					<view class="movie-content">
+						<text class="name">{{item.nm}}</text>
+						<text class="type">{{item.cat}}</text>
+						<text class="actor">主演:{{item.star}}</text>
+						<text class="session">{{item.rt}}</text>
+					</view>
+					<text class="score">{{item.wish}}<text class="score1">人想看</text></text>
+					<text class="buy buy1">预售</text>
+				</view>
+			</block>
+		</view>
+	</view>
+</template>

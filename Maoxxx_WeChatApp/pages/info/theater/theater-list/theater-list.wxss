@@ -1,0 +1,60 @@
+.theater_content {
+    margin-left: 32rpx;
+    padding-right: 24rpx;
+    border-bottom: 1rpx solid #bcbcbc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.theater_details ,.theater_serve{
+    display: flex;
+}
+
+.theater_time ,.theater_message{
+    display: flex;
+    flex-direction: column;
+}
+
+.start_message {
+    font-size: 30rpx;
+    color:#000;
+    font-weight: 600;
+    margin-bottom: 22rpx;
+    margin-top: 32rpx;
+}
+
+.end_message {
+    font-size: 22rpx;
+    color:#9c9c9c;
+    margin-bottom: 26rpx;
+}
+
+.theater_message {
+    margin-left: 50rpx;
+}
+
+.theater_serve {
+    color:#ef4238;
+    align-items: center;
+}
+
+.price {
+    font-size: 20rpx;
+}
+
+.price > text {
+    font-size: 26rpx;
+    font-weight: 600;
+}
+
+.ticket {
+    margin-left: 40rpx;
+    width: 94rpx;
+    height: 54rpx;
+    text-align: center;
+    line-height: 54rpx;
+    color: #fff;
+    background-color: #ef4238;
+    font-size: 24rpx;
+    border-radius: 8rpx;
+}

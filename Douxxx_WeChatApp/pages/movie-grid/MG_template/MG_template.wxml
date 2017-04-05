@@ -1,0 +1,11 @@
+<import src="../../movie/movie-item/MI_template.wxml" />
+
+<template name="movie-grid">
+	<scroll-view scroll-y="true" lower-threshold="0" bindscrolltolower ="con_getData" class="MG-ScrollWrap">
+		<view class="gridWrap">
+			<block wx:for="{{movieList}}" wx:key="{{item}}">
+				<template is="movie-item" data="{{...item}}"></template>
+			</block>
+		</view>
+	</scroll-view>
+</template>

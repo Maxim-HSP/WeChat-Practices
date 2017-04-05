@@ -1,0 +1,141 @@
+.movie_content {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 25rpx;
+	margin-left: 24rpx;
+	padding-right: 24rpx;
+	border-bottom: 1px solid #dcdcdc;
+	padding-bottom: 28rpx;
+}
+
+.movie_img{
+	position: relative;
+}
+
+.movie_img > image {
+	width: 130rpx;
+	height: 182rpx;
+}
+
+.play_icpn {
+	width: 46rpx;
+	height: 46rpx;
+	border-radius: 50%;
+	background-color: rgba(0,0,0,.4);
+	border: 1px solid #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top:66rpx;
+	left:40rpx;
+}
+
+.play_icpn > view {
+	border-top:6px solid transparent;
+	border-left:6px solid #fff;
+	border-bottom:6px solid transparent;
+}
+
+.movie_brief_in {
+	display: flex;
+	flex-direction: column;
+	margin-left: 24rpx;
+}
+
+.movie_brief_in>view{
+	display: flex;
+	align-items: center;
+	margin-top: 10rpx;
+}
+.movie_name {
+	font-size: 32rpx;
+	color:#272727;
+}
+
+.movie_3D {
+	margin-left: 10rpx;
+	height: 28rpx;
+	border: 1px solid #8bb7ce;
+	border-radius: 4px;
+	font-size: 18rpx;
+	display: flex;
+}
+
+._3D {
+	width: 32rpx;
+	background-color: #8bb7ce;
+	color:#fff;
+	text-align: center;
+	line-height: 28rpx;
+}
+
+._imax {
+	width: 50rpx; 
+	color:#8bb7ce;
+	text-align: center;
+	line-height: 28rpx;
+}
+
+.movie_cat {
+	margin-top: 10rpx;
+	margin-bottom: 10rpx;
+}
+
+.movie_star {
+	width: 400rpx;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.movie_show {
+	margin-top: 10rpx;
+	color:#999999;
+}
+
+.movie_right {
+	width: 150rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.movie_grade{
+	color: #ffb400;
+	margin-top: 10rpx;
+}
+
+.movie_grade > text {
+	font-size: 18rpx;
+}
+
+.grade_text {
+	margin-top: 10rpx;
+	font-size: 28rpx;
+	color:#9b9b9b;
+}
+
+.movie_operate {
+	width: 92rpx;
+	height: 58rpx;
+	text-align: center;
+	line-height: 58rpx;
+	color:#fff;
+	background-color: #ef4328;
+	border-radius: 4px;
+	font-size: 24rpx;
+	margin-top: 48rpx;
+}
+
+.movie_presell{
+	width: 92rpx;
+	height: 58rpx;
+	text-align: center;
+	line-height: 58rpx;
+	color:#fff;
+	background-color: #52b0eb;
+	border-radius: 4px;
+	font-size: 24rpx;
+	margin-top: 48rpx;
+}

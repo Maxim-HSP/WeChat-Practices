@@ -1,0 +1,30 @@
+.scoreWrap{
+	height: 25rpx;
+	line-height: 25rpx;
+	display: flex;
+	align-items: center;
+}
+.starLevel{
+	display: inline-block;
+	height: 16rpx;
+	width: 80rpx;
+	background: url(/images/icon/none-star.png);
+	background-size: contain;
+	background-repeat: repeat-x; 
+}
+.starCover{
+	display: block;
+	height: 16rpx;
+	background: url(/images/icon/star.png);
+	background-size: contain;
+	background-repeat: repeat-x; 
+}
+.score{
+	font-size: 24rpx;
+	margin-left: 20rpx;
+}
+.NoScore{
+	color: gray;
+	font-style: italic;
+	font-size: 24rpx;
+}

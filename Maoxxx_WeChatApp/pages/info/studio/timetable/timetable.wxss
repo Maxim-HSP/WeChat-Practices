@@ -1,0 +1,23 @@
+.studio_header {
+    display: flex;
+    width: 1200rpx;
+    border-bottom: 1rpx solid #dcdcdc;
+}
+
+.show_time {
+    width: 216rpx;
+    height: 88rpx;
+    line-height: 90rpx;
+    text-align: center;
+    font-weight: 600;
+    border-bottom: 3rpx solid #ef4238;
+    color:#ef4238;
+}
+
+.stay_time {
+    width: 216rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    text-align: center;
+    font-weight: 600;
+}

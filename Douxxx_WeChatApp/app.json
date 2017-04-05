@@ -1,0 +1,29 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/movie/movie",
+    "pages/movie-grid/movie-grid",
+    "pages/movie-detail/movie-detail",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#48C23D",
+    "navigationBarTitleText": "loading",
+    "navigationBarTextStyle":"#FFFFFF"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/movie/movie",
+      "text": "电影",
+      "iconPath":"./images/tab/IMG_6845b_03.png",
+      "selectedIconPath":"./images/tab/IMG_6844_03.png"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "日志",
+      "iconPath":"./images/tab/IMG_6844p_03.png",
+      "selectedIconPath":"./images/tab/IMG_6845pa_05.png"
+    }],
+		"borderStyle":"white"
+  }
+}

@@ -1,0 +1,16 @@
+<import src="../movie-item/MI_template.wxml" />
+<template name="movie-list">
+	<view class="listWrap">
+		<p class="header">
+			<text>{{title}}</text><span bindtap="goToGrid" data-type="{{type}}">更多<i class="R_arrow"></i></span></p>
+		<scroll-view scroll-x="true" style="width:750rpx">
+		
+		<view class="movieWrap">
+			<block wx:for="{{subjects}}" wx:key="{{item}}">
+				<template is="movie-item" data="{{...item}}"></template>
+			</block>
+		</view>
+			
+		</scroll-view>
+	</view>
+</template>

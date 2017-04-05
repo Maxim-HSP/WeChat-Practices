@@ -1,0 +1,9 @@
+<import src="../score-star/SS_template.wxml" />
+
+<template name="movie-item">
+	<view class="movie-item" data-movieid="{{id}}" bindtap="goToMovie">
+		<image src="{{images.medium}}" alt="" />
+		<text>{{title}}</text>
+		<template is="score-star" data="{{...rating}}"></template>
+  </view>
+</template>

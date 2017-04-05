@@ -1,0 +1,67 @@
+<!--pages/seats/seats.wxml-->
+<view>
+    <view class="header">
+        <view class="Title">
+            <text>{{seats.showInfo.cinemaName}}</text>
+            <text>{{seats.showInfo.showTime}}</text>
+            <text>{{seats.showInfo.lang}}{{seats.showInfo.tp}}</text>
+        </view>
+        <view class="seatIconWrap">
+            <i></i>可选
+            <i></i>已售
+            <i></i>已选
+            <i></i>情侣座
+        </view>
+    </view>
+    <scroll-view scroll-y="true" scroll-x="true" style="height:772rpx;width:750rpx">
+        <view class="seatsWrap" style="height: {{seats.sections[0].rows*100}}rpx;width: {{seats.sections[0].columns*60}}rpx;">
+            <view class="theaterWrap"></view>
+            <text class="theaterName">{{seats.showInfo.hallName}}</text>
+            <view class="seat_text">银幕中央</view>
+            <view class="seatListWrap">
+                <table>
+                    <block wx:for="{{seats.sections[0].seatRows}}" wx:key="index">
+                        <tr>
+                            <block wx:for="{{item.seats}}" wx:key="{{index}}">
+                                <td wx:if="{{item.type === 'LK'}}" class="soldSeat"></td>
+                                <td wx:elif="{{item.type === 'E'}}"></td>
+                                <td wx:else bindtap="chooseSeat" data-pos="{{item}}" class="{{item.type === 'N'?'chooseable':'selectSeat'}}"></td>
+                            </block>
+                        </tr>
+                    </block>
+                </table>
+            </view>
+        </view>
+    </scroll-view>
+    <view class="seats_footer" wx:if="{{clickNum === 0}}">
+        <text>推荐座位</text>
+        <view class="choose_number">
+            <view class="seat_number">1人</view>
+            <view class="seat_number">2人</view>
+            <view class="seat_number">3人</view>
+            <view class="seat_number">4人</view>
+        </view>
+        <view class="seat_function">
+            <text>一次最多购买4张</text>
+            <view class="seat_btn">请先选座</view>
+        </view>
+    </view>
+    <view class="seats_footer" wx:if="{{clickNum != '0'}}">
+        <text>已选座位</text>
+        <view class="choose_number">
+            <block wx:for="{{chSeat}}" wx:key="{{index}}">
+                <view 
+                class="seat_number" 
+                data-item="{{item}}"
+                bindtap="delSeats">{{item.rowId}}排{{item.columnId}}座 ×</view>
+            </block>
+        </view>
+        <view class="seat_function">
+            <view class="prc_num">
+                <view><text>{{allPrice}}</text>元</view>
+                <text>{{seats.showInfo.price}}X{{allNum}}</text>
+            </view>
+            <view class="seat_ok" bindtap="affirmSeat">确认选座</view>
+        </view>
+    </view>
+</view>

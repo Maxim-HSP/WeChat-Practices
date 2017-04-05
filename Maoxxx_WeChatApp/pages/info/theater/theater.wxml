@@ -1,0 +1,56 @@
+<import src="theater-list/theater-list.wxml"/>
+<view class="theater">
+    <view class="theater_header">
+        <view class="studio_message">
+            <text>{{theater.cinemaDetailModel.nm}}</text>
+            <view>{{theater.cinemaDetailModel.addr}}</view>
+        </view>
+        <view class="location">
+            <view class="line"></view>
+            <view class="location_icon">
+                <image src="/img/a8v.png"></image>
+                <text>地图</text>
+            </view>
+        </view>
+    </view>
+    <view class="theater_photos">
+        <image class="theater_photos_img" src="{{theater.currentMovie.img}}"></image>
+        <scroll-view class="theater_photos_show" scroll-x="true">
+            <view class="show_photos">
+               <view class="movie_img">
+                   <block wx:for="{{theater.movies}}" wx:key="{{index}}">
+                    <image class="{{movieid == item.id?'show_img':'stay_img'}}" src="{{item.img}}"></image>
+                    </block>
+               </view>
+            </view>
+        </scroll-view>
+        <view class="pointer"></view>
+    </view>
+    <view class="movie_message">
+        <view class="movie_name">
+            <text>{{movies.nm}}</text>
+            <view>
+                {{movies.sc}}<text>分</text>
+            </view>
+        </view>
+        <view class="movie_details">
+            <text>{{movies.dur}}分钟</text>
+            <view class="movie_line"></view>
+            <text>{{movies.cat}}</text>
+            <view class="movie_line"></view>
+            <text>{{movies.dir}}</text>
+        </view>
+    </view>
+    <scroll-view scroll-x="true">
+        <view class="theater_showtime">
+           <block wx:for="{{theater.Dates}}" wx:key="{{index}}">
+               <view 
+               class="{{showDate == item.slug ? 'show_time':'stay_time'}}" 
+               bindtap="changeTime" data-time="{{item.slug}}">{{item.text}}</view>
+           </block>
+        </view>
+    </scroll-view>
+    <block wx:for="{{theater.DateShow[showDate]}}" wx:key="index">
+        <template is="theater-list" data="{{...item}}"/>
+    </block>
+</view>

@@ -1,0 +1,10 @@
+<import src="timetable/timetable.wxml"/>
+<import src="studio-main/studio-main.wxml"/>
+   <view class="studio">
+    <scroll-view scroll-x="true">
+        <template is="timetable"/>
+    </scroll-view>
+    <block wx:for="{{studio}}" wx:key="{{index}}">
+        <template is="studio-main" data="{{...item}}"/>
+    </block>
+</view>

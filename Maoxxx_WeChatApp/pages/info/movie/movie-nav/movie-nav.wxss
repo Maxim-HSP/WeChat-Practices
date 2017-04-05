@@ -1,0 +1,46 @@
+.hot_header {
+	display: flex;
+	height: 89rpx;
+	border-bottom: 1px solid #d8d8d8;
+	justify-content: space-between;
+}
+
+.header_text {
+	display: flex;
+	line-height: 89rpx;
+}
+
+.city {
+	margin-left: 32rpx;
+	margin-right: 158rpx;
+	font-size: 26rpx;
+	display: flex;
+	align-items: center;
+}
+
+.city>view {
+	border-top: 5px solid #cacaca;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+}
+
+.hot,.coming {
+	width: 88rpx;
+	text-align: center;
+	font-size: 28rpx;
+}
+.hot {
+	margin-right: 74rpx;
+}
+.active{
+	color: #ef4328;
+	border-bottom: 4px solid #ef4328;
+}
+.movie_search {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 89rpx;
+	height: 89rpx;
+	border-left: 1px solid #d8d8d8;
+}

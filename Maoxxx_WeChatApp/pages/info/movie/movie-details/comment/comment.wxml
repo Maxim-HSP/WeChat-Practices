@@ -1,0 +1,20 @@
+<template name="comment">
+	<view class="audience_content">
+		<image src="{{avatarurl}}"></image>
+		<view>
+			<view>
+				<text class="comment_name">{{nickName}}</text>
+				<text class="sign">购</text>
+			</view>
+			<view class="comment_star"></view>
+			<view class="comment_text">{{content}}</view>
+			<view class="comment_footer">
+				<text>{{time}}</text>
+				<view>
+					<image src="/img/a22.png"></image>
+					<text>{{approve}}</text>
+				</view>
+			</view>
+		</view>
+	</view>
+</template>

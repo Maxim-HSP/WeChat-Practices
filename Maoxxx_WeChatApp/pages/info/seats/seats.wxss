@@ -1,0 +1,204 @@
+/* pages/seats/seats.wxss */
+
+.header{
+	border-bottom: 1px solid #C0C0C0;
+	padding: 32rpx 32rpx 0;
+	line-height: 40rpx;
+}
+.Title{
+	height: 100rpx;
+	border-bottom: 1px solid #DCDCDC;
+}
+.Title text:nth-child(1){
+	display: block;
+	font-size: 34rpx;
+	font-weight: bold;
+}
+.Title text:nth-child(2){
+	font-size: 24rpx;
+	color: #989898;
+}
+.Title text:nth-child(3){
+	font-size: 24rpx;
+	color: #DD403B;
+    margin-left: 14rpx;
+}
+.seatIconWrap{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 25rpx;
+	font-size: 25rpx;
+}
+.seatIconWrap i{
+	display: inline-block;
+	height: 40rpx;
+	width: 50rpx;
+	margin: 0 5rpx 0 25rpx;
+}
+.seatIconWrap i:nth-child(1){
+	background: url(/img/x9.png) no-repeat;
+	background-size: contain;
+}
+.seatIconWrap i:nth-child(2){
+	background: url(/img/a2k.png) no-repeat;
+	background-size: contain;
+}
+.seatIconWrap i:nth-child(3){
+	background: url(/img/a2t.png) no-repeat;
+	background-size: contain;
+}
+.seatIconWrap i:nth-child(4){
+	width: 80rpx;
+	background: url(/img/zt.png) no-repeat;
+	background-size:contain;
+}
+/*座位列表*/
+.seatsWrap{
+	background-color: #F0F0F0;
+	position: relative;
+}
+.theaterWrap{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -150rpx;
+	height: 0; 
+	border-top: 20px solid #DCDCDC;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent; 
+	width: 150px;
+}
+.theaterName{
+	display: inline-block;
+	position: absolute;
+	top: 0rpx;
+	left: 46%;
+/*	width: 150rpx;*/
+/*	margin-left: -60rpx;*/
+	text-align: center;
+	font-size: 30rpx;
+}
+
+.seat_text {
+	position: absolute;
+	top: 92rpx;
+	left: 50%;
+	margin-left: -50rpx;
+	width: 100rpx;
+	height: 32rpx;
+	text-align: center;
+	line-height: 32rpx;
+	font-size: 18rpx;
+	color:#bcbcbc;
+	background-color: #e0e0e0;
+	border-radius: 8rpx;
+}
+
+.seatListWrap{
+	position: absolute;
+	top: 133rpx;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.seatListWrap tr{
+	display: block;
+}
+.seatListWrap td{
+	display: inline-block;
+	height: 40rpx;
+	width: 46rpx;
+	margin: 6rpx;
+}
+
+.chooseable{
+	background: url(/img/x9.png) no-repeat;
+	background-size: contain;
+}
+
+.soldSeat{
+	background: url(/img/a2k.png) no-repeat;
+	background-size: contain;
+}
+.selectSeat{
+	background: url(/img/a2t.png) no-repeat;
+	background-size: contain;
+}
+
+
+/*尾部*/
+.seats_footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	margin:18rpx 28rpx 0 30rpx;
+	font-size: 24rpx;
+	color:#666666;
+	background-color: #fff;
+}
+
+.choose_number {
+	display: flex;
+	color: #000;
+	margin-top: 16rpx;
+	padding-bottom: 14rpx;
+	border-bottom: 1rpx solid #e6e6e6;
+}
+
+.seat_number {
+	width: 134rpx;
+	height: 56rpx;
+	border: 1px solid #dddddd;
+	text-align: center;
+	line-height: 56rpx;
+	border-radius: 8rpx;
+	margin-right: 22rpx;
+}
+
+.seat_function {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 30rpx;
+	color:#999999;
+}
+
+.prc_num {
+	display: flex;
+	flex-direction: column;
+	font-size: 22rpx;
+}
+
+.prc_num >view {
+	color:#ef4238;
+}
+
+.prc_num >view text {
+	font-size: 36rpx;
+	font-weight: 600;
+}
+.seat_btn {
+	width: 296rpx;
+	height: 76rpx;
+	background-color: #ffd699;
+	color:#fff;
+	text-align: center;
+	line-height: 76rpx;
+	border-radius: 8rpx;
+	margin: 10rpx 0;
+}
+
+.seat_ok {
+	width: 296rpx;
+	height: 76rpx;
+	background-color: #ff9900;
+	color:#fff;
+	text-align: center;
+	line-height: 76rpx;
+	border-radius: 8rpx;
+	margin: 10rpx 0;
+}

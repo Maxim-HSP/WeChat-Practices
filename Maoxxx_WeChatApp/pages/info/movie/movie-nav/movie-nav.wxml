@@ -1,0 +1,14 @@
+<template name="movie_nav">
+    <view class="hot_header">
+        <view class="header_text">
+            <view class="city">成都
+                <view></view>
+            </view>
+            <view class="hot {{showHot?'active':''}}" bindtap="toHot">热映</view>
+            <view class="coming {{showHot?'':'active'}}" bindtap="toComing">待映</view>
+        </view>
+        <view class="movie_search">
+            <icon type="search" size="22" color="#ef4328" />
+        </view>
+    </view>
+</template>

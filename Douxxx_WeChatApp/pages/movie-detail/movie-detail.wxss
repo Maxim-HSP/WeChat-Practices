@@ -1,0 +1,149 @@
+/* pages/movie-detail/movie-detail.wxss */
+.header{
+	position: relative;
+	height: 360rpx;
+	width: 100%;
+	color: #FFFFFF;
+}
+.posterBack{
+	position: absolute;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	filter: blur(8rpx);
+}
+.posterMask{
+	position: absolute;
+	z-index: 2;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(33, 33, 33, 0.4);
+}
+.titleWrap{
+	position: absolute;
+	z-index: 3;
+	top: 116rpx;
+	left: 30rpx;
+}
+.poster{
+	display: inline-block;
+	margin-right: 32rpx;
+	height: 280rpx;
+	width: 200rpx;
+}
+.title{
+	position: absolute;
+	top: 50rpx;
+	width: 360rpx;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-size: 40rpx;
+	margin-bottom: 50rpx;
+}
+.scoreWrap{
+	position: absolute;
+	top: 150rpx;
+	left: 230rpx;
+	width: 360rpx;
+}
+.score{
+	line-height: 52rpx;
+	font-size: 50rpx;
+}
+.starWrap{
+	display: inline-block;
+	height: 16rpx;
+	width: 80rpx;
+	background: url(/images/icon/none-star.png);
+	background-size: contain;
+	background-repeat: repeat-x; 
+	position: absolute;
+	left: 90rpx;
+}
+.starCover{
+	display: block;
+	height: 16rpx;
+	background: url(/images/icon/star.png);
+	background-size: contain;
+	background-repeat: repeat-x; 
+}
+.RtCount{
+	font-size: 22rpx;
+	display: block;
+	position: absolute;
+	left: 90rpx;
+	top: 22rpx;
+}
+/*主要信息块*/
+.infoWrap{
+	color: #3F3F3F;
+	font-weight: bold;
+	font-size: 24rpx;
+	line-height: 50rpx;
+	padding:70rpx 30rpx 30rpx 30rpx;
+	background-color: #FFFFFF;
+	margin-bottom: 20rpx;
+}
+.BtnWrap{
+	padding: 30rpx 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.BtnWrap button{
+	display: inline-block;
+	background-color: #FFFFFF;
+	border: 1px solid #E5AA70;
+	color: #E5AA70;
+	font-size: 28rpx;
+	width: 324rpx;
+}
+/*演职人员块*/
+.castWrap{
+	padding: 20rpx 0;
+	background-color: #FFFFFF;
+	margin-bottom: 20rpx;
+}
+.castWrap > text{
+	display: block;
+	font-size: 30rpx;
+	margin-left: 20rpx;
+}
+.castItem{
+	text-align: center;
+	font-size: 24rpx;
+}
+.castItem text:first-child{
+	display: block;
+	color: #212121;
+}
+.castItem text:last-child{
+	display: block;
+	color: #A1A1A3;
+}
+.imageWrap{
+	display: flex;
+	padding: 20rpx 0;
+}
+.imageWrap image{
+	width: 200rpx;
+	height: 280rpx;
+	margin: 0 20rpx;
+	flex-shrink: 0;
+}
+/*剧情简介块*/
+.SumyWrap{
+	padding-top: 20rpx;
+	font-weight: normal;
+}
+.SumyWrap text:first-child{
+	display: block;
+	width: 100%;
+	padding-bottom: 10rpx;
+	border-bottom: 1px solid #A5A5A5;
+	font-size: 30rpx;
+}
+.SumyWrap text:nth-child(2){
+	font-weight: normal
+}

@@ -1,0 +1,19 @@
+<template name="timetable">
+    <view class="studio_header">
+            <view class="stay_time">
+                今天03月15日
+            </view>
+            <view class="stay_time">
+                明天03月16日
+            </view>
+            <view class="stay_time">
+                后天03月17日
+            </view>
+            <view class="stay_time">
+                后天03月17日
+            </view>
+            <view class="stay_time">
+                后天03月17日
+            </view>
+        </view>
+</template>

@@ -1,0 +1,41 @@
+<template name="movie-item">
+    <view class="movie_content">
+        <view class="movie_img">
+            <image src="{{img}}"></image>
+            <view class="play_icpn">
+                <view></view>
+            </view>
+        </view>
+        <view class="movie_brief_in" bindtap="onClickMovie" data-movieid="{{id}}">
+            <view>
+                <text class="movie_name">{{nm}}</text>
+                <view class="movie_3D">
+                    <view class="_3D" wx:if="{{'3d'}}">3D</view>
+                    <view class="_imax" wx:if="{{imax}}">IMAX</view>
+                </view> 
+            </view>
+            <text class="movie_cat">{{cat}}</text>
+            <text class="movie_star">主演：{{star}}</text>
+            <text class="movie_show">{{showInfo}}</text>
+        </view>
+        <view class="movie_right">
+            <view wx:if="{{preSale == 0}}">
+                <view class="movie_grade" wx:if="{{sc != 0}}">{{sc}}<text>分</text></view>
+                <view class="grade_text"  wx:if="{{sc == 0}}">暂无评分</view>
+            </view>
+            <view class="movie_grade" wx:else>{{wish}}<text>人想看</text></view>
+            <view 
+            class="movie_operate" 
+            wx:if="{{preSale == 0}}" 
+            bindtap="clickBuy"
+            data-nm="{{nm}}" 
+            data-movieid="{{id}}">购票</view>
+            <view 
+            class="movie_presell" 
+            wx:if="{{preSale == 1}}" 
+            bindtap="clickBuy"
+            data-nm="{{nm}}"  
+            data-movieid="{{id}}">预售</view>
+        </view>
+    </view>
+</template>

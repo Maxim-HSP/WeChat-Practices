@@ -1,0 +1,33 @@
+@import "../movie-item/MI_template.wxss";
+
+.listWrap{
+	margin-bottom: 30rpx;
+	padding-top: 30rpx;
+	background-color: #FFFFFF;
+}
+.movieWrap{
+	display: flex;
+	padding-bottom: 30rpx;
+}
+.R_arrow{
+	display: inline-block;
+	width: 10rpx;
+	height: 10.4px;
+	background: url(../../images/icon/arrow-right.png) no-repeat;
+	background-size: cover;
+	margin-left: 10rpx;
+}
+.header{
+	display: flex;
+	padding: 0 20rpx;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 28rpx;
+	margin-bottom: 20rpx;
+}
+.header span:nth-child(1){
+	color: #00084E
+}
+.header span:nth-child(2){
+	color: #36496C
+}

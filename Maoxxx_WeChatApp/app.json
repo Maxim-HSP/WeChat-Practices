@@ -1,0 +1,39 @@
+{
+	"pages": [
+		"pages/info/movie/movie",
+		"pages/info/seats/seats",
+		"pages/info/theater/theater",
+		"pages/info/studio/studio",
+		"pages/info/movie/movie-details/movie-details",
+		"pages/index/index",
+		"pages/logs/logs"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#ef4328",
+		"navigationBarTitleText": "猫眼电影",
+		"navigationBarTextStyle": "white"
+	},
+	"tabBar": {
+		"borderStyle": "white",
+		"color": "#666666",
+		"selectedColor": "#ef4328",
+		"backgroundColor": "#f7f7fa",
+		"list": [{
+			"pagePath": "pages/info/movie/movie",
+			"iconPath": "/img/a3v.png",
+			"selectedIconPath": "/img/a3w.png",
+			"text": "电影"
+		}, {
+			"pagePath": "pages/logs/logs",
+			"iconPath": "/img/a3n.png",
+			"selectedIconPath": "/img/a3o.png",
+			"text": "影院"
+		}, {
+			"pagePath": "pages/logs/logs",
+			"iconPath": "/img/a3t.png",
+			"selectedIconPath": "/img/a3u.png",
+			"text": "日志"
+		}]
+	}
+}

@@ -1,0 +1,60 @@
+/* pages/movie/movie.wxss */
+@import "./movie-list/ML_template.wxss";
+
+.searchArea{
+	position: relative;
+	width: 100%;
+	height: 80rpx;
+}
+.searchArea input{
+	position: absolute;
+	padding:0 60rpx;
+  background-color: #F2F2F2;
+  height: 80rpx;
+	width: 630rpx;
+  font-size: 28rpx;
+}
+.searchIcon{
+	position: absolute;
+	z-index: 10;
+	top: 24rpx;
+	left: 15rpx;
+}
+.clearIcon{
+	display: inline-block;
+	position: absolute;
+	z-index: 10;
+	top: 24rpx;
+	right: 18rpx;
+}
+.searchWrap{
+	background-color: #FFFFFF;
+	min-height: 300rpx;
+}
+.searchWrap view:first-child{
+	font-size: 30rpx;
+	border-bottom: 1px solid #323639;
+}
+.history-item{
+	display: block;
+	padding: 20rpx;
+}
+.resultWrap{
+	background-color: #FFFFFF;
+}
+/* 搜索结果列表 */
+.MG-ScrollWrap{
+	height: 1060rpx;
+}
+.gridWrap{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	background-color: #FFFFFF;
+}
+.movie-item{
+	margin: 25rpx 5rpx 0;
+}
+.movie-item > text{
+	margin: 10rpx 0 10rpx 0;
+}

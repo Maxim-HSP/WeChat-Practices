@@ -1,0 +1,22 @@
+/* pages/info/movie/movie.wxss */
+@import "movie-list/movie-list.wxss";
+@import "movie-nav/movie-nav.wxss";
+@import "movie-coming/movie-coming.wxss";
+	
+.movie_hot {
+	font-size: 26rpx;
+	color:#666666;
+	display: flex;
+	flex-direction: column;
+	width: 750rpx;
+	background-color: #fff;
+	font-family: MicroSoft Yahei;
+}
+
+.loading {
+	height: 60rpx;
+	text-align: center;
+}
+
+
+

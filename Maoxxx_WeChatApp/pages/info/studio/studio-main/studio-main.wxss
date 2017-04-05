@@ -1,0 +1,126 @@
+.studio_content {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 26rpx;
+    padding-right: 26rpx;
+    margin-top: 40rpx;
+    border-bottom: 1rpx solid #dcdcdc;
+}
+
+.studio_content > view {
+    display: flex;
+    flex-direction: column;
+}
+
+.studio_name {
+    display: flex;
+    font-size: 30rpx;
+    color: #000;
+    font-weight: 600;
+}
+
+.studio_name > view {
+    color:#ef4238;
+    margin-left: 24rpx;
+}
+
+.studio_name > view text {
+    font-size: 20rpx;
+    font-weight: 500;
+}
+
+.address {
+    margin: 26rpx 0 22rpx;
+}
+
+.studio_serve {
+    display: flex;
+    font-size: 22rpx;
+}
+
+.seat {
+    width: 32rpx;
+    height: 32rpx;
+    text-align: center;
+    line-height: 32rpx;
+    color:#88b9c6;
+    border: 1rpx solid #88b9c6;
+    border-radius: 4rpx;
+    margin-right: 6rpx;
+}
+
+.than_hall {
+    width: 142rpx;
+    height: 32rpx;
+    text-align: center;
+    line-height: 32rpx;
+    color:#88b9c6;
+    border: 1rpx solid #88b9c6;
+    border-radius: 4rpx;
+    margin-right: 6rpx;
+}
+
+.ticket{
+    width: 54rpx;
+    height: 32rpx;
+    text-align: center;
+    line-height: 32rpx;
+    color:#88b9c6;
+    border: 1rpx solid #88b9c6;
+    border-radius: 4rpx;
+    margin-right: 6rpx;
+}
+
+
+.snack {
+    width: 54rpx;
+    height: 32rpx;
+    text-align: center;
+    line-height: 32rpx;
+    color:#ffb951;
+    border: 1rpx solid #ffb951;
+    border-radius: 4rpx;
+    margin-right: 6rpx;
+}
+
+.card {
+     width: 76rpx;
+    height: 32rpx;
+    text-align: center;
+    line-height: 32rpx;
+    color:#ffb951;
+    border: 1rpx solid #ffb951;
+    border-radius: 4rpx;
+    margin-right: 6rpx;   
+}
+
+.IMAX {
+    width: 100rpx;
+    height: 32rpx;
+    text-align: center;
+    line-height: 32rpx;
+    color:#88b9c6;
+    border: 1rpx solid #88b9c6;
+    border-radius: 4rpx;
+    margin-right: 6rpx;   
+}
+
+.session {
+    display: flex;
+    align-items: center;
+    margin: 22rpx 0 36rpx;
+}
+
+.line {
+    width: 2rpx;
+    height: 26rpx;
+    background-color: #666;
+    margin: 0 12rpx;
+}
+
+
+.distance {
+    margin-top: 98rpx;
+    font-size: 22rpx;
+    color: #999；
+}

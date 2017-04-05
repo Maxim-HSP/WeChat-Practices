@@ -1,0 +1,29 @@
+<template name="studio-main">
+    <view class="studio_content" bindtap="toTheater" data-cinemaid="{{id}}">
+        <view>
+            <view class="studio_name">
+                <text>{{nm}}</text>
+                <view>{{sellPrice}}<text>元起</text></view>
+            </view>
+            <text class="address">{{addr}}</text>
+            <view class="studio_serve">
+                <view class="seat">座</view>
+<!--                <view class="than_hall">杜比全景声厅</view>-->
+                <view class="ticket">改签</view>
+                <view class="seat" wx:if="{{deal == 0 ? true:false}}">退</view>
+<!--                <view class="snack">小吃</view>-->
+                <view class="card" wx:if="{{sell}}">折扣卡</view>
+                <view class="IMAX" wx:if="{{imax == 1 ? true:false}}">IMAX厅</view>
+            </view>
+            <view class="session">
+                近期场次：
+                <text>17:25</text>
+                <view class="line"></view>
+                <text>18:25</text>
+                <view class="line"></view>
+                <text>18:50</text>
+            </view>
+        </view>
+        <text class="distance">{{dis}}Km</text>
+    </view>
+</template>

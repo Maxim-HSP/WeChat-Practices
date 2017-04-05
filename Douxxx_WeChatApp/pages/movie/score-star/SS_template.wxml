@@ -1,0 +1,9 @@
+<template name="score-star">
+	<view class="scoreWrap" wx:if="{{average !== 0}}">
+		<i class="starLevel"><i class="starCover" style="width: {{stars*2}}%"></i></i>
+		<text class="score">{{average}}</text>
+	</view>
+	<view class="scoreWrap" wx:else>
+		<text class="NoScore">无评分</text>
+	</view>
+</template>

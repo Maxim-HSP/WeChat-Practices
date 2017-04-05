@@ -1,0 +1,109 @@
+<import src="actor/actor.wxml" />
+<import src="comment/comment.wxml" />
+<scroll-view scroll-y="true" class="movie_details">
+	<view class="movie_header">
+		<image src="{{films.img}}"></image>
+		<view>
+			<view class="movie_intro">
+				<view class="movie_img">
+					<image src="{{films.img}}"></image>
+					<view class="play_icpn">
+						<view></view>
+					</view>
+				</view>
+				<view class="movie_brief_intr">
+					<text class="movie_name">{{films.nm}}</text>
+					<text class="movie_eName">{{films.scm}}</text>
+					<view class="rating">
+						<view>
+							<text>观众评分</text>
+							<view>
+								<text class="rating_value">{{films.sc}}</text>
+								<text class="ratings_count">({{films.snum}}人评)</text>
+							</view>
+						</view>
+						<view class="line"></view>
+						<view>
+							<text>专业评分</text>
+							<view>
+								<text class="rating_value">{{films.vnum/10}}</text>
+								<text class="ratings_count">({{films.vnum}}人评)</text>
+							</view>
+						</view>
+					</view>
+					<view class="movie_brefing">
+						<text>{{films.cat}}</text>
+						<text>{{films.src}}/{{films.dur}}分钟</text>
+						<text>{{films.rt}}</text>
+					</view>
+				</view>
+			</view>
+			<view class="movie_btn">
+				<view class="wish">
+					<view>想看</view>
+				</view>
+				<view class="rat">
+					<view>评分</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="movie_summary" style="{{hiddenText?'-webkit-line-clamp: 3':''}}">{{films.dra}}</view>
+	<view class="clickBtn" bindtap="clickText">
+		<view style="{{hiddenText?'transform: rotate(90deg)':'transform: rotate(-90deg)'}}">></view>
+	</view>
+	<view class="movie_avatars">
+		<text class="headline">演职人员</text>
+		<scroll-view scroll-x="true">
+			<view class="avatars_img">
+				<block wx:for="{{films.image}}" wx:key="{{index}}">
+					<template is="actor" data="{{...item}}" /> </block>
+			</view>
+		</scroll-view>
+	</view>
+	<view class="box_office" wx:if="{{films.showSnum}}">
+		<text class="headline">票房</text>
+		<view>
+			<view class="headline_content">
+				<text>{{films.rank}}</text>
+				<text class="headline_text">昨日票房排行</text>
+			</view>
+			<view class="headline_content">
+				<text>{{films.first_rank}}</text>
+				<text class="headline_text">首周票房（万）</text>
+			</view>
+			<view class="headline_content">
+				<text>{{films.rank_all}}</text>
+				<text class="headline_text">累计票房（万）</text>
+			</view>
+		</view>
+	</view>
+	<view class="movie_photo">
+		<view class="movie_photo_header">
+			<text>视频和剧照</text>
+			<view> {{films.pn}}
+				<text>></text>
+			</view>
+		</view>
+		<scroll-view scroll-x="true">
+			<view class="movie_photo_img">
+				<view class="stage_photo_img">
+					<block wx:for="{{films.image}}" wx:key="{{index}}">
+						<image class="stage_photo" src="{{item.img}}"></image>
+					</block>
+				</view>
+			</view>
+		</scroll-view>
+	</view>
+	<view class="audience_comment">
+		<view class="audience_header">
+			<text>观众评论</text>
+			<view>写短评</view>
+		</view>
+		<block wx:for="{{hcmts}}" wx:key="{{index}}">
+			<template data="{{...item}}" is="comment" /> </block>
+		<view class="comment_more"> 查看全部{{total}}条观众评论 </view>
+	</view>
+	<view class="space"></view>
+	<view class="movie_ticket" bindtap="clickBuy"> 优惠购票 </view>
+</scroll-view>

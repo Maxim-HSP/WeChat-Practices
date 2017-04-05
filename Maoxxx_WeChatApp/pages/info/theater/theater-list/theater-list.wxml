@@ -1,0 +1,20 @@
+<template name="theater-list">
+    <view class="theater_content" bindtap="chooseSeat" data-showid="{{showId}}">
+        <view class="theater_details">
+            <view class="theater_time">
+                <text class="start_message">{{tm}}</text>
+                <text class="end_message">{{end}}散场</text>
+            </view>
+            <view class="theater_message">
+                <text class="start_message">{{lang}}{{tp}}</text>
+                <text class="end_message">{{th}}</text>
+            </view>
+        </view>
+        <view class="theater_serve">
+            <view class="price">
+                <text>34.5</text>元
+            </view>
+            <view class="ticket">购票</view>
+        </view>
+    </view>
+</template>

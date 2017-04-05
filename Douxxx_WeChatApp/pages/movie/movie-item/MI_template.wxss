@@ -1,0 +1,23 @@
+@import "../score-star/SS_template.wxss";
+
+
+.movie-item{
+	display: inline-block;
+	padding: 0 20rpx;
+	flex-shrink: 0;
+}
+.movie-item image{
+	display: block;
+	width: 200rpx;
+	height: 270rpx;
+}
+.movie-item > text{
+	display: block;
+	font-size: 28rpx;
+	color: #222222;
+	width: 180rpx;
+	white-space: nowrap;
+	overflow: hidden ;
+	text-overflow: ellipsis;
+	margin: 24rpx 0 22rpx 0;
+}

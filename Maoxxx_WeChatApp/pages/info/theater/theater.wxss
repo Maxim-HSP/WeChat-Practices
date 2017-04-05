@@ -1,0 +1,169 @@
+@import "theater-list/theater-list.wxss" 
+
+.theater {
+    display: flex;
+    flex-direction: column;
+    font-size: 26rpx;
+    color: #9b9b9b;
+    width: 750rpx;
+    background-color: #fff;
+    font-family: MicroSoft Yahei;
+}
+
+.theater_header {
+    padding: 0 46rpx 32rpx 32rpx;
+    margin-top: 32rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #bcbcbc;
+}
+
+.studio_message {
+    display: flex;
+    flex-direction: column;
+}
+
+.studio_message>text {
+    font-size: 30rpx;
+    color: #000;
+}
+
+.studio_message>view {
+    margin: 20rpx 0 28rpx;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    width: 2rpx;
+    height: 50rpx;
+    background-color: #e5e5e5;
+    margin-right: 24rpx;
+}
+
+.location_icon {
+    display: flex;
+    flex-direction: column;
+}
+
+.location_icon>image {
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.theater_photos {
+    width: 750rpx;
+    height: 292rpx;
+    position: relative;
+}
+
+.theater_photos_img {
+    width: 750rpx;
+    height: 292rpx;
+    filter: blur(30rpx);
+}
+
+.theater_photos_show {
+    position: absolute;
+    top: 22rpx;
+    left: 0;
+}
+
+.show_photos {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 280rpx;
+}
+
+.movie_img {
+    display: flex;
+}
+
+.show_img {
+    width: 182rpx;
+    height: 252rpx;
+    margin-right: 30rpx;
+    border: 1rpx solid #fff;
+}
+
+.stay_img {
+    width: 162rpx;
+    height: 226rpx;
+    margin-right: 30rpx;
+}
+
+.pointer {
+    position: absolute;
+    bottom: 0;
+    left: 358rpx;
+    border-bottom: 14rpx solid #fff;
+    border-top: 7rpx solid transparent;
+    border-left: 14rpx solid transparent;
+    border-right: 14rpx solid transparent;
+}
+
+.movie_message {
+    margin-top: 32rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1rpx solid #bcbcbc;
+}
+
+.movie_name {
+    display: flex;
+    align-items: flex-end;
+    font-size: 30rpx;
+    font-weight: 600;
+    color: #333;
+}
+
+.movie_name>view {
+    color: #ffb400;
+    font-size: 26rpx;
+    margin-left: 16rpx;
+}
+
+.movie_name view>text {
+    font-size: 22rpx;
+}
+
+.movie_details {
+    margin: 18rpx 0 24rpx;
+    display: flex;
+    align-items: center;
+}
+
+.movie_line {
+    width: 2rpx;
+    height: 24rpx;
+    background-color: #999;
+    margin: 0 12rpx;
+}
+
+.theater_showtime {
+    display: flex;
+    border-bottom: 1rpx solid #dcdcdc;
+}
+
+.show_time {
+    width: 216rpx;
+    height: 88rpx;
+    line-height: 90rpx;
+    text-align: center;
+    font-weight: 600;
+    border-bottom: 3rpx solid #ef4238;
+    color:#ef4238;
+}
+
+.stay_time {
+    width: 216rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    text-align: center;
+    font-weight: 600;
+}

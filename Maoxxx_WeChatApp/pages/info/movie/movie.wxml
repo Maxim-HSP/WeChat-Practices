@@ -1,0 +1,21 @@
+<import src="movie-list/movie-list.wxml" />
+<import src="movie-nav/movie-nav.wxml" />
+<import src="movie-coming/movie-coming.wxml" />
+
+
+<scroll-view 
+class="movie_hot" 
+scroll-y="true" 
+bindscrolltolower="scrollLower" 
+style="height:{{scrollHeight}}px;">
+	<template is="movie_nav" data="{{showHot}}"/>
+	<view wx:if="{{showHot}}">
+		<block wx:for="{{movies}}" wx:key="{{index}}">
+			<template is="movie-item" data="{{...item}}"/>
+		</block>
+	</view>
+	<template is="comingWrap" data="{{movies}}" wx:else />
+
+	
+	<view class="loading" hidden="{{!loading}}">加载更多...</view>
+</scroll-view>
